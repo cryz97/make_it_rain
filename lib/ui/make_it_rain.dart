@@ -18,6 +18,39 @@ class MakeItRainState extends State<MakeItRain> {
         title: new Text("Make it rain!"),
         backgroundColor: Colors.lightGreen,
       ),
+      body: new Container(
+        child: new Column(
+          children: <Widget>[
+            
+            new Text("Get Rich!",
+            style: new TextStyle(
+              color: Colors.grey,
+              fontWeight: FontWeight.w400,
+              fontSize: 30,
+            ),),
+            
+            new Expanded(
+                child: new Center(
+                  child: new Text("Money!",
+                  style: new TextStyle(
+                    color: Colors.greenAccent,
+                    fontSize: 48,
+                    fontWeight: FontWeight.w800
+                  ),),
+                )),
+
+            new Expanded(
+                child: new Center(
+                  child: new FlatButton(
+                      onPressed: null,
+                      child: new Text("Let it Rain!",
+                      style: new TextStyle(
+                        fontSize: 20,
+                      ),)),
+                ))
+          ],
+        ),
+      ),
     );
   }
 
